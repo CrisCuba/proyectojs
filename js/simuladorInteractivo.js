@@ -6,7 +6,7 @@ let resultado = null
 
 
 while (entrada != "ESC") {
-    entrada = prompt("Que operación quieres realizar? \nSUMA=1 RESTA=2 MULTIPLICAR=3 DIVIDIR=4 \no ESC para Terminar")
+    entrada = prompt("Que operación quieres realizar? \nSUMA=1 \nRESTA=2 \nMULTIPLICAR=3 \nDIVIDIR=4 \npara finalizar ingrese ESC")
 
     if (entrada.toUpperCase == "ESC") {
         break;
