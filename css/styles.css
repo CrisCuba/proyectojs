@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
 
 ul {
   list-style: none;
@@ -17,41 +21,81 @@ ul {
 }
 
 li {
+  display: flex;
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
-  text-align: center;
-  /*text-shadow: 2px 2px 2px limegreen;*/
+  align-items: center;
+  justify-content: left;
   line-height: 50px;
+  width: 170px;
+  height: 70px;
+}
+
+ul li:hover {
+  background: white;
+  color: black;
+  border-radius: 40px;
+}
+
+ul li:nth-child(1) {
+  background: transparent;
+  margin-left: 0;
+}
+
+nav{
+  width: 100%;
+}
+
+.navbar{
+  align-items:flex-start;
+  padding-top: 0;
+}
+
+span{
+  align-self: flex-start;
+  text-align: center;
+  color: #111;
+  margin-right: 5px;
 }
 
 a {
-  color: antiquewhite;
+  color: #fff;
   text-decoration: none;
   opacity: 0,5;
   transition: 0,3s;
+  margin-left: 10px;
 }
 
-header a:hover {
-  border: 0;
-}
 
 a:hover {
-  color: #8cffa0;
   opacity: 1;
   border-bottom: 1px solid #8cffa0;
   border-top: 1px solid #8cffa0;
+  color: black;
+}
+
+.tarjeta:hover{
+  background: rgba(128, 0, 128, 0.671);
+  color: #fff;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff;
 }
 
 .contenedor_grid {
   display: grid;
   width: 100%;
   grid-template-areas: 
-  "head head head head head head head head head head head head"
+  "nav head head head head head head head head head head head"
   "nav  main main main main main main main main main main main"
   "nav  foot foot foot foot foot foot foot foot foot foot foot";
   grid-template-rows: 60px 1fr 1fr;
-  grid-template-columns: 180px repeat(11, 1fr);
+  grid-template-columns: 140px repeat(11, 1fr);
 }
 
 .contenedor_grid > header {
@@ -63,25 +107,39 @@ a:hover {
 
 .header_flex{
   display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-direction: row;
   padding: 5px;
 }
 
 .header_flex div{
-  border: 2px solid transparent;
-  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
-  border-radius: 10px;
-}
-
-.header_flex img{
   width: 50px;
   height: 50px;
+  border: groove .5em purple;
+  border-radius: 80% 80% 80%;
+  background: #fff;  
 }
 
-.img_container{
-  margin: 0 60px;
+input{
+  align-self: center;
+  width: 200px;
+  height: 30px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 60px;
+}
+
+
+img {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
   
+}
+
+.logo a:hover{
+  border: 0;
+  color: #fff;
 }
 
 h1{
@@ -92,13 +150,54 @@ h1{
 
 .contenedor_grid > nav {
   grid-area: nav;
-  background-color: black;
+  background-color: purple;
 }
 
 .contenedor_grid > main {
   grid-area: main;
-  background-color: whitesmoke;
+  background-color: #fff;
   height: 100vh;
+}
+
+.tarjeta{
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 30%;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px 2px #999;
+  border-radius: 70px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.tarjeta_balance {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px 2px #999;
+  border-radius: 70px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+
+}
+
+.tarjeta_contacto {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 60%;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px 2px #999;
+  border-radius: 70px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+
 }
 
 footer {
@@ -107,7 +206,11 @@ footer {
 
 .contenedor_grid > footer {
   grid-area: foot;
-  background-color: #8cffa0;
+  justify-self: center;
+  border-radius: 70px;
+  width: 90%;
+  background-color: #111;
+  color: #fff;
 }
 
 
@@ -116,8 +219,10 @@ footer {
   width: 100%;
   height: 250px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
+  align-items: center;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .footer_secciones{
@@ -145,4 +250,22 @@ footer {
   width: 30%;
   height: 200px;
   margin: 0 auto;
+}
+
+@media (max-width: 320px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .tarjeta {
+    width: 100%;
+  }
 }
