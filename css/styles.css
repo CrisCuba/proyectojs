@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+/*------------------------------------ESTILOS GENERALES----------------------------------------*/
+
 body {
   overflow-x: hidden;
 }
@@ -50,6 +52,11 @@ nav{
 .navbar{
   align-items:flex-start;
   padding-top: 0;
+  z-index: 1020;
+}
+
+.avatar{
+  text-align: center;
 }
 
 span{
@@ -87,6 +94,40 @@ main{
   background: #fff;
 }
 
+
+input{
+  align-self: center;
+  width: 200px;
+  height: 30px;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 60px;
+  text-align: center;
+}
+
+
+img {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  
+}
+
+h1{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.logo a:hover{
+  border: 0;
+  color: #fff;
+}
+
+/*------------------------------------ESTILOS INDEX----------------------------------------*/
+
 .contenedor_grid {
   display: grid;
   width: 100%;
@@ -117,37 +158,10 @@ main{
   height: 50px;
   border: groove .5em purple;
   border-radius: 80% 80% 80%;
-  background: #fff;  
-}
-
-input{
-  align-self: center;
-  width: 200px;
-  height: 30px;
-  margin: 50px;
-  padding: 10px;
-  border-radius: 60px;
-}
-
-
-img {
-  width: 25px;
-  height: 25px;
-  margin: 0 auto;
-  
-}
-
-.logo a:hover{
-  border: 0;
-  color: #fff;
-}
-
-h1{
-  font-size: 30px;
-  margin: 0 auto;
+  background: #fff;
+  text-align: center;
   padding: 5px;
 }
-
 .contenedor_grid > nav {
   grid-area: nav;
   background-color: purple;
@@ -158,6 +172,10 @@ h1{
   background-color: #fff;
   height: 100vh;
 }
+
+
+/*------------------------------------TARJETAS PANEL PRINCIPAL----------------------------------------*/
+
 
 .tarjeta{
   display: flex;
@@ -170,6 +188,7 @@ h1{
   text-align: center;
   margin: 20px;
   padding: 20px;
+  z-index: 1040;
 }
 
 .tarjeta_balance {
@@ -199,6 +218,81 @@ h1{
   padding: 20px;
 
 }
+
+.banner{
+  width: 500px;
+}
+
+#banner_img{
+  width: 500px;
+  height: 300px;
+}
+/*------------------------------------PAGINA CLIENTES----------------------------------------*/
+
+.cont_form {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1{
+  margin-bottom: 100px;
+}
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem;
+}
+
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+  cursor: pointer;
+}
+
+.adherir {
+  width: 50px;
+  height: 50px;
+  border-radius: 80% 80% 80%;
+  background: #fff;
+}
+
+.cont_img_clientes{
+  padding: 100px 40px;
+}
+
+#img_clientes{
+  width: 500px;
+  height: 300px;
+  margin: auto auto;
+}
+
+.base_clientes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 50%;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px 2px #999;
+  border-radius: 70px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+
+}
+/*------------------------------------FOOTER----------------------------------------*/
 
 footer {
   align-self: flex-end;
@@ -251,6 +345,10 @@ footer {
   height: 200px;
   margin: 0 auto;
 }
+
+
+/*------------------------------------RESPONSIVE DESIGN----------------------------------------*/
+
 
 @media (max-width: 320px) {
   .tarjeta {
