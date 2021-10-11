@@ -1,3 +1,12 @@
-let nombre = prompt("Ingrese su nombre");
-let apellido =prompt("Ingrese su apellido");
-console.log("Hola!" + " " + nombre);
+class Producto{
+    constructor(nombre, precio, cantidad){
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+
+    calcularTotalVendido(){
+        let totalVendido = this.precio * this.cantidad;
+        return totalVendido;
+    }
+}
