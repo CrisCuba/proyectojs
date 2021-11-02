@@ -10,111 +10,39 @@
   <link rel="stylesheet" href="./css/palette.css">
   <title>Proyectojs</title>
 </head>
-
-<body>
-  <div class="contenedor_grid">
-    <header class="header_flex">
-      <input type="search" placeholder="Buscar 🔍">
-      <div>
-        <button type="button" class="avatar" name="avatar" data-toggle="modal" data-target=".bd-example-modal-sm"></ion-icon>CG</button>
-        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              ...
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <nav class="navbar">
-      <ul class="logo">
-        <li><a href="index.html"><img src="imagenes/pixels.png">Proyecto JS</a></li>
-        <li><a href="index.html"><span>
-              <ion-icon name="home-outline"></ion-icon>
-            </span>Panel</a></li>
-        <li><a href="clientes.html"><span>
-              <ion-icon name="id-card-outline"></ion-icon>
-            </span>Clientes</a></li>
-        <li><a href="ventas.html"><span>
-              <ion-icon name="cash-outline"></ion-icon>
-            </span>Ventas</a></li>
-        <li><a href="productos.html"><span>
-              <ion-icon name="library-outline"></ion-icon>
-            </span>Productos</a></li>
-        <li><a href="mensajes.html"><span>
-              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-            </span>Mensajes</a></li>
-        <li><a href="perfil.html"><span>
-          <ion-icon name="person-outline"></ion-icon>
-            </span>Perfil</a></li>
-        <li><a href="password.html"><span>
-              <ion-icon name="lock-closed-outline"></ion-icon>
-            </span>Contraseña</a></li>
-      </ul>
-    </nav>
-    <main>
-      <div class="tarjeta" id="cardVentas">
-        <span>
-          <ion-icon name="logo-usd"></ion-icon>
-        </span>
-        <h2>VENTAS TOTALES</h2>
-        <p id="ventaTotal"></p>
-      </div>
-      <div class="tarjeta">
-        <span>
-          <ion-icon name="bar-chart-outline"></ion-icon>
-          </ion-icon>
-        </span>
-        <h2>STOCK TOTAL</h2>
-      </div>
-      <div class="tarjeta">
-        <span>
-          <ion-icon name="chatbubbles-outline"></ion-icon>
-        </span>
-        <h2>INBOX</h2>
-      </div>
-      <div class="tarjeta_contacto">
-        <span>
-          <ion-icon name="people-circle-outline"></ion-icon>
-        </span>
-        <h2>Contactos Frecuentes</h2>
-      </div>
-      <div class="tarjeta_balance">
-        <span>
-          <ion-icon name="swap-horizontal-outline"></ion-icon>
-        </span>
-        <h2>Balance General</h2>
-      </div>
-      <div class="banner">
-        <img id="banner_img" src="imagenes/mobile-devices-2017978.png">
-      </div>
-    </main>
-    <!--<footer class="footer_flex">
-      <div class="footer_secciones">
-        <h3>XXXXXXXXXXXXX</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, perspiciatis officia nihil laudantium doloribus
-          eveniet voluptate suscipit voluptatum natus impedit ex obcaecati? Voluptate non vel deleniti ut quaerat
-          corporis harum!</p>
-      </div>
-      <div class="footer_pagos">
-        <h3>XXXXXXXXXXXXX</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, perspiciatis officia nihil laudantium doloribus
-          eveniet voluptate suscipit voluptatum natus impedit ex obcaecati? Voluptate non vel deleniti ut quaerat
-          corporis harum!</p>
-      </div>
-      <div class="footer_contacto">
-        <h3>XXXXXXXXXXXXX</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, perspiciatis officia nihil laudantium doloribus
-          eveniet voluptate suscipit voluptatum natus impedit ex obcaecati? Voluptate non vel deleniti ut quaerat
-          corporis harum!</p>
-      </div>
-    </footer>-->
-  </div>
+<body class="back-log">
+  <div class="container-fluid">
+		<div class="row main-content bg-success text-center">
+			<div class="col-md-4 text-center company__info">
+				<h4 class="company_title">Proyecto JS - DASHBOARD</h4>
+			</div>
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+				<div class="container-fluid">
+					<div class="row">
+						<h2>Log In</h2>
+					</div>
+					<div class="row">
+						<form control="" class="form-group" id="form">
+							<!--<div class="row">-->
+								<input type="text" name="username" id="username" class="form__input" placeholder="Usuario">
+							<!--</div>-->
+							<!--<div class="row">-->
+								<input type="password" name="password" id="password" class="form__input" placeholder="Contraseña">
+							<!--</div>-->
+							<!--<div class="row">-->
+								<input type="submit" value="Submit" class="btn">
+							<!--</div>-->
+              <span id="mensajeError"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
   <script src="scripts/bootstrap.bundle.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js "></script>
-  <script src="js/entregasparciales/eventos.js"></script>
 </body>
-
 </html>
