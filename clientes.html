@@ -48,16 +48,18 @@
     <main>
       <div class="cont_form">
         <form class="form" id="form">
-          <h1>ALTA DE CLIENTE</h1>
+        <h1>ALTA DE CLIENTE</h1>
+          ID
+          <input type="text" id="id" />
           Nombre
-          <input type="text" />
+          <input type="text" id="name" />
           Ingrese número de CUIT
-          <input type="text" />
+          <input type="text" id="cuit" />
           Correo Electrónico
-          <input type="email" />
-          <button class="adherir" type="submit">
+          <input type="email" id="mail" />
+          <button class="adherir" id="adherir" type="submit">
             <ion-icon name="add-outline"></ion-icon>
-          </button>
+        </button>
         </form>
         <div class="cont_img_clientes">
           <img id="img_clientes" src="imagenes/avatar-2155431_1920.png">
@@ -65,30 +67,30 @@
       </div>
       <div class="base_clientes">
         <h2>Base de Clientes</h2>
-        <table class="table">
+        <table class="table" id="table">
           <thead>
             <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Nombre y Apellido</th>
-              <th scope="col">CUIT</th>
-              <th scope="col">E-Mail</th>
+              <th scope="col" id="id">ID</th>
+              <th scope="col" id="name">Nombre y Apellido</th>
+              <th scope="col" id="cuit">CUIT</th>
+              <th scope="col" id="mail">E-Mail</th>
             </tr>
           </thead>
           <tbody id="altaClientes">
             <tr>
-              <th scope="row">1</th>
+              <th scope="row"></th>
               <td></td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">2</th>
+              <th scope="row"></th>
               <td></td>
               <td></td>
               <td></td>
             </tr>
             <tr>
-              <th scope="row">3</th>
+              <th scope="row"></th>
               <td></td>
               <td></td>
               <td></td>

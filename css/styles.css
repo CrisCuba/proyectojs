@@ -85,6 +85,7 @@ a:hover {
   color: black;
 }
 
+
 .tarjeta:hover{
   background: rgba(128, 0, 128, 0.671);
   color: #fff;
@@ -375,7 +376,6 @@ form{
 
 .base_clientes {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   width: 70%;
@@ -387,6 +387,10 @@ form{
   margin: 20px;
   padding: 20px;
 
+}
+
+.base_clientes h2{
+  margin-bottom: 50px;
 }
 
 /*------------------------------------PAGINA VENTAS----------------------------------------*/

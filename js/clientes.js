@@ -1,36 +1,27 @@
-class Cliente {
-    constructor (id, nombre, cuit, email) {
-        this.id = id;
-        this.nombre = nombre;
-        this.cuit = cuit;
-        this.email = email;
-    }
-
-    mostrarCliente() {
-
-        const resultado =`
-            <tr>
-                <th scope="row">${this.id}</th>
-                <td>${this.nombre}</td>
-                <td>${this.cuit}</td>
-                <td>${this.email}</td>
-            </tr>
-        `;
-        return resultado;
-    }
-
-}
-
-for (const cliente of clientes) {
-    const nuevoCliente = new Cliente(cliente.id, cliente.nombre, cliente.cuit, cliente.email);
-    document.getElementById("altaCliente").appendChild(nuevoCliente.mostrarCliente());
-}
-
 const form = document.getElementById("form");
 
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    let tomarDato = new Dato(form);
 
-    tomarDato.get()
-})
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let formData = new FormData(form);
+
+insertRow(formData);
+
+function insertRow(datosFormulario) {
+    let infoTabla = document.getElementById("table");
+
+    let nuevaFila = infoTabla.insertRow(-1);
+
+    let nuevaCelda = nuevaFila.insertCell(0);
+    nuevaCelda.textContent = datosFormulario.get("id");
+
+    nuevaCelda = nuevaFila.insertCell(1);
+    nuevaCelda.textContent = datosFormulario.get("name");
+
+    nuevaCelda = nuevaFila.insertCell(2);
+    nuevaCelda.textContent = datosFormulario.get("cuit");
+
+    nuevaCelda = nuevaFila.insertCell(3);
+    nuevaCelda.textContent = datosFormulario.get("mail");
+}
+});
