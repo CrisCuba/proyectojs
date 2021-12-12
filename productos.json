@@ -1,0 +1,37 @@
+[{
+    "codigo": 1,
+    "marca": "Samsung",
+    "modelo": "S21 Ultra",
+    "precio": 180000
+},
+{
+    "codigo": 2,
+    "marca": "Motorola",
+    "modelo": "EDGE 20 PRO",
+    "precio": 100000
+},
+{
+    "codigo": 3,
+    "marca": "Iphone",
+    "modelo": "12",
+    "precio": 250000
+},
+{
+    "codigo": 4,
+    "marca": "LG",
+    "modelo": "Velvet",
+    "precio": 70000
+},
+{
+    "codigo": 5,
+    "marca": "Samsung",
+    "modelo": "A72",
+    "precio": 75000
+},
+{
+    "codigo": 6,
+    "marca": "Motorola",
+    "modelo": "G30",
+    "precio": 65000
+}
+]

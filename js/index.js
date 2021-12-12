@@ -4,6 +4,9 @@ const usuarioRegistro = [{
     nombre: 'Gonzalez Cuba'
 }, ];
 
+let delay = alertify.get('notifier','delay');
+
+
 function obtenerUsuario(username) {
     const usuario = usuarioRegistro.find(userReg => userReg.username == username);
     return usuario;
@@ -37,6 +40,8 @@ $("#form").submit((event) => {
         };
         localStorage.setItem("credenciales", JSON.stringify(credenciales));
 
+        alertify.set('notifier','delay', 5);
+        alertify.success('Bienvenido gonzalezcuba', alertify.get, delay);
         window.location.href = "dashboard.html";
     } else {
         mensajeError = "El usuario o contraseña introducidos son inválidos";
